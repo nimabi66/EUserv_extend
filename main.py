@@ -15,7 +15,7 @@ PROXIES = {
 def login(username, password) -> (str, requests.session):
     headers = {
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
-                      "Chrome/83.0.4103.116 Safari/537.36",
+                      "Chrome/88.0.4324.182 Safari/537.36",
         "origin": "https://www.euserv.com"
     }
     login_data = {
@@ -41,7 +41,7 @@ def get_servers(sess_id, session) -> {}:
     url = "https://support.euserv.com/index.iphp?sess_id=" + sess_id
     headers = {
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
-                      "Chrome/83.0.4103.116 Safari/537.36",
+                      "Chrome/88.0.4324.182 Safari/537.36",
         "origin": "https://www.euserv.com"
     }
     f = session.get(url=url, headers=headers)
@@ -61,7 +61,7 @@ def renew(sess_id, session, password, order_id) -> bool:
     url = "https://support.euserv.com/index.iphp"
     headers = {
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
-                      "Chrome/83.0.4103.116 Safari/537.36",
+                      "Chrome/88.0.4324.182 Safari/537.36",
         "Host": "support.euserv.com",
         "origin": "https://support.euserv.com",
         "Referer": "https://support.euserv.com/index.iphp"
